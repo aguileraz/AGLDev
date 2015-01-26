@@ -43,7 +43,7 @@ Another DB for all project using orm_default (MSSQL or another MySQL, just for n
 
 
 ###Whats Done
-I make use of 2 databases, one for AGLCOX Module and another for all project using orm_default, but can't move of de orm_default from module `AGLBase`.
+I make use of 2 databases, one for `AGLCOX` Module and another for all project using `orm_default`, but can't move of de `orm_default` from module `AGLBase`.
 
 ###TO DO
 Need to change orm_default to orm_aglbase (all authentication will be use this).
