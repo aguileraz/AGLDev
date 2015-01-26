@@ -142,18 +142,28 @@ return array(
             ),
         ),
         'eventmanager' => array(
+            'orm_aglbase' => array(),
+            'orm_agllog' => array(),
             'orm_aglcox' => array(),
         ),
         'sql_logger_collector' => array(
+            'orm_aglbase' => array(),
+            'orm_agllog' => array(),
             'orm_aglcox' => array(),
         ),
         'mapping_collector' => array(
+            'orm_aglbase' => array(),
+            'orm_agllog' => array(),
             'orm_aglcox' => array(),
         ),
         'formannotationbuilder' => array(
+            'orm_aglbase' => array(),
+            'orm_agllog' => array(),
             'orm_aglcox' => array(),
         ),
         'entity_resolver' => array(
+            'orm_aglbase' => array(),
+            'orm_agllog' => array(),
             'orm_aglcox' => array(),
         ),
     ),
