@@ -36,7 +36,7 @@ Use an separeted MySQL DB for Authentication and Permissions;
 
 Another MySQL DB to Logs only;
 
-Another DB for all project using orm_default (MSSQL or another MySQL, just for now!).
+Another DB for the rest of project using `orm_default` (MSSQL or another MySQL, just for now!).
 
 ###The final project show like this:
 1 MySQL DB for Module AGLBase (for authentication and permissions).
