@@ -1,0 +1,32 @@
+<section id="<?php echo $this->escapeHtml("Container"); ?>">
+    <div class="jumbotron hide">
+        <h2><?php echo 'Editando Resource'; ?></h2>
+        <p></p>
+    </div>
+    <div class="row row-m" >
+        <div class="span1"><h2><?php echo 'Editando Resource'; ?></h2></div>
+        <div class="span20 controls" data-spy="scroll" data-target="#menu" data-offset="50">
+            <section id="<?php echo $this->escapeHtml("ZF2"); ?>">
+                <?php
+                $form = $this->form;
+                $form->setAttribute('action', $this->url('sonacl-admin/default', array('controller' => 'resources', 'action' => 'edit')));
+                $form->prepare();
+
+                echo $this->form()->openTag($form);
+                echo $this->formCollection($form);
+                echo $this->form()->closeTag();
+                ?>
+            </section>
+            <section id="paginator" style='display:none;'>
+                <p><a href="<?php //echo $this->url('sonacl-admin/default', array('controller' => 'roles', 'action' => 'new'));       ?>">Novo</a></p>
+            </section>
+            <section id="infos" class="jumbotron" style='display:none;'>
+                <h2>Informações</h2>
+                <pre>
+                    <?php //var_dump($paginator);?>
+                    <?php //print_r($viewUsers);?>
+                </pre>
+            </section>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url);
+$form->prepare();
+
+echo $this->form()->openTag($form);
+
+foreach ($form as $element) : ?>
+<div class="control-group<?php if($this->formElementErrors($element)) echo " error" ?>">
+    <label class="control-label"><b><?php echo $element->getLabel() ?></b></label>
+    <div class="controls">
+        <?php echo $this->formElement($element);
+        if($this->formElementErrors($element)) ?>
+        	<span class="help-inline"><?php echo $this->formElementErrors($element) ?></span>
+    </div>
+</div>
+<?php endforeach; ?>
+<?php echo $this->form()->closeTag($form); ?>

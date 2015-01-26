@@ -1,0 +1,89 @@
+<?php
+
+//config/autoload/cache.local.php
+return array(
+    'service_manager' => array(
+        'abstract_factories' => array(
+            'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
+        ),
+    ),
+    'caches' => array(
+        'memcached' => array(//can be called directly via SM in the name of 'memcached'
+            'adapter' => array(
+                'name' => 'memcached',
+                'lifetime' => 7200,
+                'options' => array(
+                    'servers' => array(
+                        array(
+                            '127.0.0.1', 11211
+                        )
+                    ),
+                    'namespace' => 'MYMEMCACHEDNAMESPACE',
+                    'liboptions' => array(
+                        'COMPRESSION' => true,
+                        'binary_protocol' => true,
+                        'no_block' => true,
+                        'connect_timeout' => 100
+                    )
+                )
+            ),
+            'plugins' => array(
+                'exception_handler' => array(
+                    'throw_exceptions' => false
+                ),
+            ),
+        ),
+        'filesystem' => array(//can be called directly via SM in the name of 'filesystem'
+            'adapter' => array(
+                'name' => 'filesystem',
+                'lifetime' => 10,
+                'options' => array(
+                    'ttl' => 10,
+                    'dirLevel' => 2,
+                    'cacheDir' => 'data/cache',
+                    'dirPermission' => 0755,
+                    'filePermission' => 0666,
+                    'namespaceSeparator' => '-db-',
+                ),
+            ),
+            'plugins' => array(
+                'Serializer',
+                'exception_handler' => array(
+                    'throw_exceptions' => false
+                ),
+            ),
+        ),
+        'apc' => array(//can be called directly via SM in the name of 'apc'
+            'adapter' => array(
+                'name' => 'apc',
+                'lifetime' => 10,
+                'options' => array(
+                    'ttl' => 10,
+                    'namespaceSeparator' => '-db-',
+                ),
+            ),
+            'plugins' => array(
+                'Serializer',
+                'exception_handler' => array(
+                    'throw_exceptions' => false
+                ),
+            ),
+        ),
+        'memory' => array(//can be called directly via SM in the name of 'memory'
+            'adapter' => array(
+                'name' => 'memory',
+                'lifetime' => 10,
+                'options' => array(
+                    'ttl' => 10,
+                    'namespaceSeparator' => '-db-',
+                ),
+            ),
+            'plugins' => array(
+                'Serializer',
+                'exception_handler' => array(
+                    'throw_exceptions' => false
+                ),
+            ),
+        ),
+    ),
+);

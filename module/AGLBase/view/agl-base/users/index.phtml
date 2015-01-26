@@ -1,0 +1,46 @@
+<section id="<?php echo $this->escapeHtml("Container"); ?>">
+    <div class="jumbotron hide">
+        <h2><?php echo 'Users'; ?></h2>
+        <p></p>
+    </div>
+    <div class="row row-m" >
+        <div class="span1"><h2><?php echo 'Users'; ?> <a href="<?php echo $this->url('aglbase-admin-usr/default', array('controller' => 'users', 'action' => 'new')); ?>"><span class='btn btn-info btn-sm'><i class='glyphicon glyphicon-plus'></i></span></a></h2></div>
+        <div class="span20" data-spy="scroll" data-target="#menu" data-offset="50">
+            <section id="<?php echo $this->escapeHtml("ZF2"); ?>">
+                <table class="table table-bordered table-striped table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center; vertical-align: middle;">ID</th>
+                            <th style="text-align: center; vertical-align: middle;">Nome</th>
+                            <th style="text-align: center; vertical-align: middle;">Email</th>
+                            <th style="text-align: center; vertical-align: middle;">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($this->data as $entity): ?>
+                            <tr>
+                                <td style="text-align: center;"><?php echo $entity->getId(); ?></td>
+                                <td style="text-align: left;"><?php echo $entity->getNome(); ?></td>
+                                <td style="text-align: left;"><?php echo $entity->getEmail(); ?></td>
+                                <td style="text-align: center;">
+                                    <a href="<?php echo $this->url('aglbase-admin-usr/default', array('controller' => 'users', 'action' => 'edit', 'id' => $entity->getId())); ?>"><span class='btn btn-success btn-sm'><i class='glyphicon glyphicon-pencil'></i></span></a>
+                                    <a href="<?php echo $this->url('aglbase-admin-usr/default', array('controller' => 'users', 'action' => 'delete', 'id' => $entity->getId())); ?>"><span class='btn btn-danger btn-sm'><i class='glyphicon glyphicon-remove'></i></span></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </section>
+            <section id="paginator">
+                <p><?php echo $this->paginationControl($this->data, 'Sliding', 'partials/item_pagination'); ?></p>
+            </section>
+            <section id="infos" class="jumbotron" style='display:none;'>
+                <h2>Informações</h2>
+                <pre>
+                    <?php //var_dump($paginator);?>
+                    <?php //print_r($viewUsers);?>
+                </pre>
+            </section>
+        </div>
+    </div>
+</section>

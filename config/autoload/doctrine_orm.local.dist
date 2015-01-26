@@ -1,0 +1,94 @@
+<?php
+
+return array(
+    'doctrine' => array(
+        'connection' => array(
+            // Default DB connection
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' => array(
+                    'host' => 'host',
+                    'port' => '3306',
+                    'user' => 'user',
+                    'password' => 'password',
+                    'dbname' => 'dbname',
+                    'charset' => 'utf8',
+                    'driverOptions' => array(
+                        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+                    ),
+                )
+            ),
+            // AGLBase DB connection
+            'orm_aglcox' => array(
+                // 'driverClass' => 'Doctrine\DBAL\Driver\PDOSqlsrv\Driver',
+                'driverClass' => 'Doctrine\DBAL\Driver\MSSql\Driver',
+                'params' => array(
+                    'host' => 'host',
+                    'port' => '1433',
+                    'user' => 'user',
+                    'password' => 'password',
+                    'dbname' => 'dbname',
+                    // 'charset'       => 'CP850',
+                    'charset' => 'utf8',
+                )
+            ),
+        ),
+        // Entity Manager instantiation settings
+        'entitymanager' => array(
+            'orm_default' => array(
+                'connection' => 'orm_default',
+                'configuration' => 'orm_default',
+            ),
+            'orm_aglcox' => array(
+                'connection' => 'orm_aglcox',
+                'configuration' => 'orm_aglcox',
+            ),
+        ),
+        // Use array cache locally, also auto generate proxies on development environment.
+        'configuration' => array(
+            'orm_default' => array(
+                'metadata_cache' => 'array',
+                'query_cache' => 'array',
+                'result_cache' => 'array',
+                'driver' => 'orm_default',
+                'hydration_cache' => 'array',
+                'generate_proxies' => true,
+                'proxy_dir' => 'data/DoctrineORMModule/Proxy',
+                'proxy_namespace' => 'DoctrineORMModule\Proxy',
+                'filters' => array(),
+                'datetime_functions' => array(),
+                'string_functions' => array(),
+                'numeric_functions' => array(),
+            ),
+            'orm_aglcox' => array(
+                'metadata_cache' => 'array',
+                'query_cache' => 'array',
+                'result_cache' => 'array',
+                'driver' => 'orm_aglcox',
+                'hydration_cache' => 'array',
+                'generate_proxies' => true,
+                'proxy_dir' => 'data/DoctrineORMModule/Proxy',
+                'proxy_namespace' => 'DoctrineORMModule\Proxy',
+                'filters' => array(),
+                'datetime_functions' => array(),
+                'string_functions' => array(),
+                'numeric_functions' => array(),
+            ),
+        ),
+        'eventmanager' => array(
+            'orm_aglcox' => array(),
+        ),
+        'sql_logger_collector' => array(
+            'orm_aglcox' => array(),
+        ),
+        'mapping_collector' => array(
+            'orm_aglcox' => array(),
+        ),
+        'formannotationbuilder' => array(
+            'orm_aglcox' => array(),
+        ),
+        'entity_resolver' => array(
+            'orm_aglcox' => array(),
+        ),
+    ),
+);

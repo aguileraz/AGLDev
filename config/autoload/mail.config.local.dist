@@ -1,0 +1,15 @@
+<?php
+
+return array(
+    'mail' => array(
+        'name' => 'smtp',
+        'host' => 'smtp',
+        'connection_class' => 'login',
+        'connection_config' => array(
+            'username' => 'username',
+            'password' => 'password',
+            'ssl' => 'ssl',
+            'port' => '465',
+        ),
+    ),
+);
