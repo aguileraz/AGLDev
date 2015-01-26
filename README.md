@@ -1,7 +1,7 @@
 ##AGLDev
 
-###Basic
-This is a "<b>User Auth</b>", "<b>Permissions Manager</b>", "<b>Multi DB</b>" module based on ZF2 skeleton application.
+###About
+This is a "<b>User Authentication</b>", "<b>Permissions Manager</b>", "<b>Multi DB</b>" module based on ZF2 skeleton application using Doctrine 2.
 
 ###Installation
 execute <b>composer update</b> after clone the project:
