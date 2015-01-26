@@ -5,7 +5,7 @@ Basic
 ------------
 This is a "<b>User Auth</b>", "<b>Permissions Manager</b>", "<b>Multi DB</b>" module based on ZF2 skeleton application.
 
-How to use
+Installation
 ------------
 execute <b>composer update</b> after clone the project:
 ```sh
@@ -13,7 +13,8 @@ php composer.phar update
 ```
 Import <b>data/mysql.sql</b> to you mysql database.
 
-
+How to use
+------------
 Access http://<b>localhost</b>/register to create new user.
 
 Access http://<b>localhost</b>/admin/usr to manager users.
