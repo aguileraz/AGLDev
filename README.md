@@ -3,7 +3,7 @@ AGLDev
 
 Basic
 ------------
-This is a `User Auth`, `Permissions Manager`, `Multi DB` module based on ZF2 skeleton application.
+This is a "<b>User Auth</b>", "<b>Permissions Manager</b>", "<b>Multi DB</b>" module based on ZF2 skeleton application.
 
 Installation
 ------------
