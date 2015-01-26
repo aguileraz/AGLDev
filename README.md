@@ -51,12 +51,12 @@ I make use of 2 databases, one for `AGLCOX` Module and another for all project u
 ###TO DO
 Need to change `orm_default` to `orm_aglbase` (all authentication will be use this).
 
-Need to use `orm_default` in `AGLCOX` (after orm_aglbase already working for auth).
+Need to use `orm_default` in `AGLCOX` (after `orm_aglbase` already working for auth).
 
 Need to configure a separeted database for Logs (`orm_agllog`).
 
-Show Multi DB queries in ZendDeveloperTools@toolbar.
+Show Multi DB queries in `ZendDeveloperTools@toolbar`.
 
-Show Auth informations in ZendDeveloperTools@toolbar.
+Show Auth informations in `ZendDeveloperTools@toolbar`.
 
-Separate Modules AGLBase and AGLLOG from main project!
+Separate Modules `AGLBase` and `AGLLOG` from main project!
