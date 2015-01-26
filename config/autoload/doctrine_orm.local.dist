@@ -19,7 +19,22 @@ return array(
                 )
             ),
             // AGLBase DB connection
-            'orm_default' => array(
+            'orm_aglbase' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' => array(
+                    'host' => 'host',
+                    'port' => '3306',
+                    'user' => 'user',
+                    'password' => 'password',
+                    'dbname' => 'dbname',
+                    'charset' => 'utf8',
+                    'driverOptions' => array(
+                        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+                    ),
+                )
+            ),
+            // AGLLog DB connection
+            'orm_agllog' => array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
                 'params' => array(
                     'host' => 'host',
@@ -54,6 +69,14 @@ return array(
                 'connection' => 'orm_default',
                 'configuration' => 'orm_default',
             ),
+            'orm_aglbase' => array(
+                'connection' => 'orm_aglbase',
+                'configuration' => 'orm_aglbase',
+            ),
+            'orm_agllog' => array(
+                'connection' => 'orm_agllog',
+                'configuration' => 'orm_agllog',
+            ),
             'orm_aglcox' => array(
                 'connection' => 'orm_aglcox',
                 'configuration' => 'orm_aglcox',
@@ -66,6 +89,34 @@ return array(
                 'query_cache' => 'array',
                 'result_cache' => 'array',
                 'driver' => 'orm_default',
+                'hydration_cache' => 'array',
+                'generate_proxies' => true,
+                'proxy_dir' => 'data/DoctrineORMModule/Proxy',
+                'proxy_namespace' => 'DoctrineORMModule\Proxy',
+                'filters' => array(),
+                'datetime_functions' => array(),
+                'string_functions' => array(),
+                'numeric_functions' => array(),
+            ),
+            'orm_aglbase' => array(
+                'metadata_cache' => 'array',
+                'query_cache' => 'array',
+                'result_cache' => 'array',
+                'driver' => 'orm_aglbase',
+                'hydration_cache' => 'array',
+                'generate_proxies' => true,
+                'proxy_dir' => 'data/DoctrineORMModule/Proxy',
+                'proxy_namespace' => 'DoctrineORMModule\Proxy',
+                'filters' => array(),
+                'datetime_functions' => array(),
+                'string_functions' => array(),
+                'numeric_functions' => array(),
+            ),
+            'orm_agllog' => array(
+                'metadata_cache' => 'array',
+                'query_cache' => 'array',
+                'result_cache' => 'array',
+                'driver' => 'orm_agllog',
                 'hydration_cache' => 'array',
                 'generate_proxies' => true,
                 'proxy_dir' => 'data/DoctrineORMModule/Proxy',
