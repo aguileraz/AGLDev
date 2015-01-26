@@ -8,8 +8,8 @@ $modules = array(
     'DoctrineORMModule',
     'DoctrineDataFixtureModule',
     'AGLBase',
+    'AGLLOG',
     'AGLCOX',
-    'AGLCOXSite',
 );
 if ($env == 'development') {
     $modules[] = 'ZendDeveloperTools';
