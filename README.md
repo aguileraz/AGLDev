@@ -53,11 +53,13 @@ An <b>MSSQL DB</b> to `AGLCOX` Module;
 I make use of 2 databases, one for `AGLCOX` Module and another for all project using `orm_default`, but can't move of de `orm_default` from module `AGLBase`.
 
 ###TO DO
-Need to change `orm_default` to `orm_aglbase` (all authentication will be use this).
+Need to change `orm_default` to `orm_aglbase` (all authentications will be use this).
 
-Need to use `orm_default` in `AGLCOX` (after `orm_aglbase` already working for auth).
+Need to configure a separeted database for `AGLCOX` Module (`orm_aglcox`).
 
 Need to configure a separeted database for Logs (`orm_agllog`).
+
+Need to configure a separeted database for entire project (`orm_default`).
 
 Show Multi DB queries in `ZendDeveloperTools@toolbar`.
 
