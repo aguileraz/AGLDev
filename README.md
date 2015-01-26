@@ -31,7 +31,7 @@ Needs (goals)
 
 1 DB for Module AGLCOX (a MSSQL DB).
 
-Need change orm_default to orm_aglbase (all authentication using this).
+Need change orm_default to orm_aglbase (all authentication will be use this).
 
-Need use orm_default in AGLCOX.
+Need use orm_default in AGLCOX (after orm_aglbase already working for auth).
 
