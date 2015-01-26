@@ -1,6 +1,6 @@
 <?php
 
-namespace AGLCOX;
+namespace AGLLOG;
 
 return array(
     'router' => array(

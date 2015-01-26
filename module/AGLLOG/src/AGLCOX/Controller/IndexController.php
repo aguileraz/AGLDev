@@ -1,6 +1,6 @@
 <?php
 
-namespace AGLCOX\Controller;
+namespace AGLLOG\Controller;
 
 use Zend\Mvc\Controller\AbstractRestfulController;
 
