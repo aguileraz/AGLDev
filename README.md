@@ -11,7 +11,7 @@ Needs (goals)
 
 1 DB for Module AGLLOG (only logs here).
 
-1 DB for Module AGLCOX (a SQL DB).
+1 DB for Module AGLCOX (a MSSQL DB).
 
 Need change orm_default to orm_aglbase (all authentication using this).
 
