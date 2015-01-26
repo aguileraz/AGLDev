@@ -3,6 +3,14 @@
 ###About
 This is a "<b>User Authentication</b>", "<b>Permissions Manager</b>", "<b>Multi DB</b>" module based on ZF2 skeleton application using Doctrine 2.
 
+`AGLBase` - Authentication, mail, permissions, CRUD, and another cool things!
+
+`AGLLOG` - Only for log system!
+
+`AGLCOX` - An example of use MSSQL connection!
+
+`AGLOther` - An example of simple Module!
+
 ###Installation
 execute <b>composer update</b> after clone the project:
 ```sh

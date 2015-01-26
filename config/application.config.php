@@ -10,6 +10,7 @@ $modules = array(
     'AGLBase',
     'AGLLOG',
     'AGLCOX',
+    'AGLOther',
 );
 if ($env == 'development') {
     $modules[] = 'ZendDeveloperTools';
