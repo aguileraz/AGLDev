@@ -34,17 +34,26 @@ How to use
 ------------
 <b>Not finished.</b>
 
+The Objective
+------------
+Use an separeted MySQL DB for Authentication and Permissions, another MySQL DB to Logs only, and the orm_default using MSSQL(or another MySQL for now!).
+
+Whats Done
+------------
+I make use of 3 databases, one for each Module, but can't move of de orm_default from module `AGLBase`.
+Separeted database for Logs. `[OK]`
+
 Needs (goals)
 ------------
-1 DB for Module AGLBase (for authentication and permissions).
+1 MySQL DB for Module AGLBase (for authentication and permissions).
 
-1 DB for Module AGLLOG (only logs here).
+1 MySQL DB for Module AGLLOG (only logs here).
 
-1 DB for Module AGLCOX (a MSSQL DB).
+1 MSSQL/MySQL DB for other Modules including AGLCOX.
 
-Need change orm_default to orm_aglbase (all authentication will be use this).
+Need to change orm_default to orm_aglbase (all authentication will be use this).
 
-Need use orm_default in AGLCOX (after orm_aglbase already working for auth).
+Need to use orm_default in AGLCOX (after orm_aglbase already working for auth).
 
 Show Multi DB queries in ZendDeveloperTools@toolbar.
 
