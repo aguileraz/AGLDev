@@ -46,11 +46,11 @@ Another DB for all project using orm_default (MSSQL or another MySQL, just for n
 I make use of 2 databases, one for `AGLCOX` Module and another for all project using `orm_default`, but can't move of de `orm_default` from module `AGLBase`.
 
 ###TO DO
-Need to change orm_default to orm_aglbase (all authentication will be use this).
+Need to change `orm_default` to `orm_aglbase` (all authentication will be use this).
 
-Need to use orm_default in AGLCOX (after orm_aglbase already working for auth).
+Need to use `orm_default` in `AGLCOX` (after orm_aglbase already working for auth).
 
-Need a separeted database for Logs.
+Need to configure a separeted database for Logs (`orm_agllog`).
 
 Show Multi DB queries in ZendDeveloperTools@toolbar.
 
