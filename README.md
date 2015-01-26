@@ -59,3 +59,4 @@ Show Multi DB queries in ZendDeveloperTools@toolbar.
 
 Show Auth informations in ZendDeveloperTools@toolbar.
 
+Separate Modules AGLBase and AGLLOG from main project!
