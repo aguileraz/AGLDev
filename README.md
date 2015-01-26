@@ -28,11 +28,14 @@ Change <b>localhost</b> to you app link.
 
 ###How to use
 <b>Not finished.</b>
+
 After finish the initial databases config, will introduce here, how to verificate indentity and permissions! 
 
 ###The Objective
 Use an separeted MySQL DB for Authentication and Permissions;
+
 Another MySQL DB to Logs only;
+
 Another DB for all project using orm_default (MSSQL or another MySQL, just for now!).
 
 ###The final project show like this:
