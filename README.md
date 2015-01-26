@@ -12,9 +12,9 @@ execute <b>composer update</b> after clone the project:
 php composer.phar update
 ```
 
-rename `*.dist` and configure then in `configs/autoload/` folder.
+rename `*.dist` and configure then in `config/autoload/` folder.
 
-Import `data/mysql.sql` to you mysql database.
+Import `data/mysql.sql` to your mysql database.
 
 How to use
 ------------
