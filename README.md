@@ -30,7 +30,9 @@ Change <b>localhost</b> to you app link.
 <b>Not finished.</b>
 
 ###The Objective
-Use an separeted MySQL DB for Authentication and Permissions, another MySQL DB to Logs only, and the orm_default using MSSQL(or another MySQL for now!).
+Use an separeted MySQL DB for Authentication and Permissions;
+Another MySQL DB to Logs only;
+Another DB for all project using orm_default (MSSQL or another MySQL, just for now!).
 
 ###The final project show like this:
 1 MySQL DB for Module AGLBase (for authentication and permissions).
@@ -48,7 +50,7 @@ Need to change orm_default to orm_aglbase (all authentication will be use this).
 
 Need to use orm_default in AGLCOX (after orm_aglbase already working for auth).
 
-Need separeted database for Logs.
+Need a separeted database for Logs.
 
 Show Multi DB queries in ZendDeveloperTools@toolbar.
 
