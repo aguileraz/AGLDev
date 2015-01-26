@@ -28,6 +28,7 @@ Change <b>localhost</b> to you app link.
 
 ###How to use
 <b>Not finished.</b>
+After finish the initial databases config, will introduce here, how to verificate indentity and permissions! 
 
 ###The Objective
 Use an separeted MySQL DB for Authentication and Permissions;
@@ -40,7 +41,6 @@ Another DB for all project using orm_default (MSSQL or another MySQL, just for n
 1 MySQL DB for Module AGLLOG (only logs here).
 
 1 MSSQL/MySQL DB for other Modules including AGLCOX.
-
 
 ###Whats Done
 I make use of 2 databases, one for `AGLCOX` Module and another for all project using `orm_default`, but can't move of de `orm_default` from module `AGLBase`.
