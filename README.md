@@ -3,7 +3,7 @@ AGLDev
 
 Basic
 ------------
-This is a "<b>User Auth</b>", "<b>Permissions Manager</b>", "<b>Multi DB</b>" module based on ZF2 skeleton application.
+This is a `User Auth`, `Permissions Manager`, `Multi DB` module based on ZF2 skeleton application.
 
 Installation
 ------------
@@ -11,7 +11,10 @@ execute <b>composer update</b> after clone the project:
 ```sh
 php composer.phar update
 ```
-Import <b>data/mysql.sql</b> to you mysql database.
+
+rename `*.dist` and configure then in `configs/autoload/` folder.
+
+Import `data/mysql.sql` to you mysql database.
 
 How to use
 ------------
