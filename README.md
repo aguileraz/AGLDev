@@ -35,3 +35,7 @@ Need change orm_default to orm_aglbase (all authentication will be use this).
 
 Need use orm_default in AGLCOX (after orm_aglbase already working for auth).
 
+Show Multi DB querys in ZendDeveloperTools@toolbar.
+
+Show Auth informations in ZendDeveloperTools@toolbar.
+
