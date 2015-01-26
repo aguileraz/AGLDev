@@ -16,7 +16,7 @@ rename `*.dist` and configure then in `config/autoload/` folder.
 
 Import `data/mysql.sql` to your mysql database.
 
-How to use
+How to manage
 ------------
 Access http://<b>localhost</b>/register to create new user.
 
@@ -30,6 +30,9 @@ Access http://<b>localhost</b>/admin/acl to manager roles/privileges and permiss
 
 Change <b>localhost</b> to you app link.
 
+How to use
+------------
+<b>Not finished.</b>
 
 Needs (goals)
 ------------
