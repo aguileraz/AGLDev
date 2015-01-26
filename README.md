@@ -7,7 +7,7 @@ This is a "<b>User Authentication</b>", "<b>Permissions Manager</b>", "<b>Multi 
 
 `AGLLOG` - Only for log system!
 
-`AGLCOX` - An example of use MSSQL connection!
+`AGLCOX` - An example of use the Doctrine 2 MSSQL connection!
 
 `AGLOther` - An example of simple Module!
 
