@@ -40,13 +40,13 @@ Change <b>localhost</b> to you app link.
 After finish the initial databases config, will introduce here, how to verificate indentity and permissions! 
 
 ###The Objective
-Use an separeted <b>MySQL DB</b> for Authentication and Permissions;
+Use an separeted <b>MySQL DB</b> for Authentication and Permissions `orm_aglbase`;
 
-Another <b>MySQL DB</b> to `Logs` only;
+Another <b>MySQL DB</b> to `Logs` only `orm_agllog`;
 
 Another <b>MySQL DB</b> for the rest of project using `orm_default`
 
-An <b>MSSQL DB</b> to `AGLCOX` Module;
+An <b>MSSQL DB</b> to `AGLCOX` Module `orm_aglcox`;
 
 ###The final project show like this:
 1 <b>MySQL DB</b> for Module `AGLBase` (for authentication and permissions).
@@ -67,7 +67,7 @@ Need to change `orm_default` to `orm_aglbase` (all authentications will be use t
 
 Need to configure a separeted database for `AGLCOX` Module (`orm_aglcox`).
 
-Need to configure a separeted database for Logs (`orm_agllog`).
+Need to configure a separeted database for `AGLLOG` (`orm_agllog`).
 
 Need to configure a separeted database for entire project (`orm_default`).
 
