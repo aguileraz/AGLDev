@@ -19,6 +19,21 @@ return array(
                 )
             ),
             // AGLBase DB connection
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' => array(
+                    'host' => 'host',
+                    'port' => '3306',
+                    'user' => 'user',
+                    'password' => 'password',
+                    'dbname' => 'dbname',
+                    'charset' => 'utf8',
+                    'driverOptions' => array(
+                        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+                    ),
+                )
+            ),
+            // AGLCOX DB connection
             'orm_aglcox' => array(
                 // 'driverClass' => 'Doctrine\DBAL\Driver\PDOSqlsrv\Driver',
                 'driverClass' => 'Doctrine\DBAL\Driver\MSSql\Driver',
