@@ -60,7 +60,7 @@ An <b>MSSQL DB</b> to `AGLCOX` Module `orm_aglcox`;
 ###Whats Done
 `AGLCOX` Module using Doctrine `MSSQL` working right now!
 
-I make use of 2 databases, one for `AGLCOX` Module and another for all project using `orm_default`, but can't move of de `orm_default` from module `AGLBase`. (need help)
+I make use of 2 databases, one for `AGLCOX` Module and another for all project using `orm_default`, but can't move of the `orm_default` from module `AGLBase`. (need help)
 
 ###TO DO
 Need to change `orm_default` to `orm_aglbase` (all authentications will be use this).
